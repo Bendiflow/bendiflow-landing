@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bendiflow — Autonomous Revenue Systems</title>
+    <meta name="description" content="We build autonomous revenue systems for Mid-Market SaaS. No agencies. No hourly billing. Just code that moves money.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Roboto Mono', monospace;
+        }
+        body {
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+        .terminal-border {
+            border: 1px solid #333333;
+        }
+        .blink {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    
+    <!-- Header -->
+    <header class="border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-lg font-bold">BENDIFLOW</div>
+            <div class="text-sm flex items-center gap-2">
+                <span class="text-green-500">●</span>
+                <span>STATUS: ONLINE</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-4xl mx-auto px-6 py-20 md:py-32">
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            We Build Autonomous Revenue Systems for Mid-Market SaaS.
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-400 leading-relaxed">
+            No agencies. No hourly billing. Just code that moves money.
+        </p>
+    </section>
+
+    <!-- The Codex Section -->
+    <section class="max-w-4xl mx-auto px-6 py-16">
+        <div class="terminal-border bg-black p-8">
+            <div class="mb-6 pb-4 border-b border-gray-800">
+                <h2 class="text-2xl font-bold mb-1">THE CODEX</h2>
+            </div>
+
+            <div class="space-y-8">
+                <!-- What We Build -->
+                <div>
+                    <h3 class="text-green-500 text-sm font-bold mb-4">> WHAT WE BUILD</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex gap-3">
+                            <span class="text-green-500 flex-shrink-0">$</span>
+                            <span>Revenue Autopilot™ — cruise control for revenue operations</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-green-500 flex-shrink-0">$</span>
+                            <span>Autonomous flows that connect your tools: leads → enrichment → CRM → sales</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-green-500 flex-shrink-0">$</span>
+                            <span>Systems that handle repetition so humans make decisions, not copy data</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-green-500 flex-shrink-0">$</span>
+                            <span>Nothing gets forgotten. No delays. No manual updates.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Why We Win -->
+                <div>
+                    <h3 class="text-green-500 text-sm font-bold mb-4">> WHY WE WIN</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex gap-3">
+                            <span class="text-green-500 flex-shrink-0">$</span>
+                            <span><strong class="text-white">Asset vs. Service:</strong> We build machines, not rent helpers. Machines work 24/7 and scale without headcount.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-green-500 flex-shrink-0">$</span>
+                            <span><strong class="text-white">Zero-Marginal Cost:</strong> Once built, running it again costs almost nothing. Software scales better than people.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-green-500 flex-shrink-0">$</span>
+                            <span><strong class="text-white">Dogfooded First:</strong> Every system runs inside Bendiflow before deployment. We are our own first case study.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-green-500 flex-shrink-0">$</span>
+                            <span><strong class="text-white">S-Tier Standard:</strong> World-class or nothing. Good enough is failure.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Terminal Prompt -->
+                <div class="pt-4 border-t border-gray-800 text-gray-500 text-sm">
+                    <span class="text-green-500">root@bendiflow:~$</span> <span class="blink">_</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Capture Section -->
+    <section class="max-w-4xl mx-auto px-6 py-16">
+        <div class="terminal-border bg-black p-8">
+            <h2 class="text-xl font-bold mb-6">INITIALIZE PROTOCOL</h2>
+            <p class="text-gray-400 mb-8">
+                Mid-Market SaaS with messy sales ops? Enter your coordinates below.
+            </p>
+            
+            <form class="space-y-4" action="#" method="POST">
+                <div>
+                    <label for="email" class="block text-sm text-gray-500 mb-2">EMAIL_ADDRESS</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required
+                        placeholder="you@yourcompany.com"
+                        class="w-full bg-black border border-gray-700 px-4 py-3 text-white focus:outline-none focus:border-green-500 transition-colors"
+                    >
+                </div>
+                
+                <div>
+                    <label for="url" class="block text-sm text-gray-500 mb-2">SAAS_URL</label>
+                    <input 
+                        type="url" 
+                        id="url" 
+                        name="url" 
+                        required
+                        placeholder="https://yourcompany.com"
+                        class="w-full bg-black border border-gray-700 px-4 py-3 text-white focus:outline-none focus:border-green-500 transition-colors"
+                    >
+                </div>
+                
+                <button 
+                    type="submit"
+                    class="w-full bg-green-500 text-black font-bold py-3 px-6 hover:bg-green-400 transition-colors"
+                >
+                    > INITIALIZE PROTOCOL
+                </button>
+            </form>
+            
+            <p class="text-xs text-gray-600 mt-6">
+                We respond within 48 hours. No spam. No sales calls. Just signal.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 mt-20">
+        <div class="max-w-6xl mx-auto px-6 py-8 text-center text-sm text-gray-600">
+            EST. 2025. MANILA / GLOBAL. BOOTSTRAPPED.
+        </div>
+    </footer>
+
+</body>
+</html>
